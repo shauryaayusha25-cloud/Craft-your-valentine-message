@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💝</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- SEO & Social Sharing -->
+    <title>Valentine Builder 💝 Create & Share</title>
+    <meta name="description" content="Create a cute interactive Valentine quiz for your special someone. Add photos, quiz questions, and share a unique link!" />
+    <meta property="og:title" content="Someone made a Valentine for you! 💌" />
+    <meta property="og:description" content="Open this link to see a special surprise..." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#e8456b" />
+    
+    <!-- Fonts preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body, #root { min-height: 100vh; min-height: 100dvh; }
+      body {
+        font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        background: #fff5f7;
+      }
+      /* Prevent pull-to-refresh on mobile */
+      body { overscroll-behavior-y: none; }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #ffc2d1; border-radius: 3px; }
+      /* Input focus */
+      input:focus, textarea:focus { border-color: #e8456b !important; box-shadow: 0 0 0 3px rgba(232,69,107,0.1); }
+      /* Button hover */
+      button:hover { filter: brightness(1.05); transform: translateY(-1px); }
+      button:active { transform: translateY(0); }
+      /* Prevent text selection on buttons */
+      button { user-select: none; -webkit-user-select: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
