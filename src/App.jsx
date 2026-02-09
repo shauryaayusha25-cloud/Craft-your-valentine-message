@@ -35,7 +35,7 @@ const QUESTION_SUGGESTIONS = [
 // ─── Demo Data for Preview ───
 const makeDemoPhoto = (c1, c2, emoji) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${c1}"/><stop offset="100%" stop-color="${c2}"/></linearGradient></defs><rect width="360" height="360" rx="24" fill="url(#g)"/><text x="180" y="210" font-size="90" text-anchor="middle">${emoji}</text></svg>`;
-  return `data:image/svg+xml;base64,${btoa(svg)}`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 };
 
 const DEMO_DATA = {
